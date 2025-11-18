@@ -1,0 +1,185 @@
+/* 📱 UMUMIY BODY STILLARI */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+/* 🎯 APP CONTAINER */
+.app-container {
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(to bottom right, #e0f2fe, #ddd6fe);
+}
+
+/* 🎯 SARLAVHA STILI */
+.title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #1e40af;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 📊 BOARD CONTAINER */
+.board {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* 📋 USTUN STILI */
+.column {
+  width: 320px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.column:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.column h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #374151;
+  border-bottom: 3px solid #3b82f6;
+  padding-bottom: 10px;
+}
+
+/* ➕ TASK QO'SHISH QISMI */
+.addBox {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.addBox input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+.addBox input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.addBox button {
+  padding: 10px 15px;
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.addBox button:hover {
+  background: #059669;
+  transform: translateY(-2px);
+}
+
+/* 📝 TASK KARTOCHKA STILI */
+.task {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: grab;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+}
+
+.task:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.task:active {
+  cursor: grabbing;
+}
+
+.task p {
+  margin: 0 0 10px 0;
+  font-size: 15px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+/* 🔘 TASK TUGMALARI */
+.taskBtns {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.taskBtns button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.edit-btn {
+  background: #3b82f6;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+}
+
+/* 💡 FOOTER */
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* 📱 RESPONSIVE DIZAYN */
+@media (max-width: 768px) {
+  .board {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+}
